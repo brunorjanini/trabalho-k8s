@@ -4,7 +4,7 @@ import time
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/")  
 def root():
     return {"status": "running"}
 
@@ -13,7 +13,7 @@ def heavy_process():
     start = time.time()
     
     total = 0
-    for i in range(30000):
+    for i in range(4000):
         for j in range(3000):
             total += (i * j) % 7
 

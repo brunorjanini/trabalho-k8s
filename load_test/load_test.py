@@ -3,7 +3,7 @@ import concurrent.futures
 import csv
 import time
 
-URL = "http://localhost:8000/process"   # depois você troca pelo IP da nuvem
+URL = "http://20.69.18.162:8000/process"
 
 NUM_REQUESTS = 100
 MAX_WORKERS = 20
